@@ -1,0 +1,36 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$title-font: 'shrikhandregular';
+
+$font-size: ("title":1.4rem, "text":1rem);
+
+$font-weight: ("bold":"robotobold", "regular":"robotoregular", "light":"robotolight");
+
+@mixin body-margin {
+    width: 90%;
+    margin-left: 5%;
+}
+
+@mixin button-pink {
+    height: 50px;
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        border: none;
+        border-radius: 25px 25px 25px 25px;
+        color: white;
+        font-family: map-get($map: $font-weight, $key: "regular");
+        font-size: map-get($map: $font-size, $key: "text");
+}
+
+@mixin title {
+    font-size: map-get($map: $font-size, $key: "title");
+    font-family: map-get($map: $font-weight, $key: "bold");
+}
+
+@mixin order {
+    background-color: #f6f6f6;
+    display: flex;
+    height: 75px;
+    align-items: center;
+    border-radius: 15px 15px 15px 15px;
+}
