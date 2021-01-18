@@ -68,13 +68,12 @@ body {
   }
 
   .description {
-    width: 90%;
-    margin-left: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 290px;
     text-align: center;
+    background-color: #F6F6F6;
   }
   .description_title {
     margin-top: 14%;
@@ -103,33 +102,58 @@ body {
   }
 
   .order {
+    height: 440px;
     width: 90%;
     margin-left: 5%;
   }
   .order_title {
     font-size: 1.4rem;
     font-family: "robotobold";
+    margin-top: 9%;
+    margin-bottom: 7%;
   }
   .order_1 {
     background-color: #f6f6f6;
     display: flex;
     height: 75px;
+    width: 96%;
     align-items: center;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 4%;
+    font-family: "robotobold";
   }
   .order_2 {
     background-color: #f6f6f6;
     display: flex;
     height: 75px;
+    width: 96%;
     align-items: center;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 4%;
+    font-family: "robotobold";
   }
   .order_3 {
     background-color: #f6f6f6;
     display: flex;
     height: 75px;
+    width: 96%;
     align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 4%;
+    font-family: "robotobold";
+  }
+  .order_number {
+    width: 25px;
+    height: 25px;
+    background-color: #9356DC;
     border-radius: 15px 15px 15px 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .fa-mobile-alt {
@@ -147,7 +171,116 @@ body {
   .fa-store {
     margin-right: 28px;
     margin-left: 35px;
-    color: #7e7e7e;
+    color: #9356DC;
+  }
+
+  .rest {
+    height: 1225px;
+    background-color: #F6F6F6;
+  }
+  .rest_title {
+    font-size: 1.4rem;
+    font-family: "robotobold";
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 10%;
+    padding-bottom: 3%;
+  }
+
+  .cont {
+    height: 250px;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    margin-bottom: 5%;
+  }
+  .cont_top {
+    height: 175px;
+  }
+  .cont_top--img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  .cont_bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+  }
+  .cont_bottom_name {
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    width: 70%;
+    margin-left: 4%;
+  }
+  .cont_bottom_name--title {
+    margin-bottom: 0;
+    margin-top: 6%;
+    font-family: "robotobold";
+    font-size: 1rem;
+  }
+  .cont_bottom_name--text {
+    margin-top: 1%;
+    font-family: "robotolight";
+    font-size: 1rem;
+  }
+
+  .fa-heart {
+    margin-top: 50%;
+    margin-right: 25px;
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 200px;
+  }
+  .footer_logo {
+    height: 20px;
+    width: 100px;
+    margin-left: 5%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+  }
+  .footer_logo--img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer_rest {
+    margin-left: 5%;
+    display: flex;
+  }
+  .footer_rest--lien {
+    margin-left: 5%;
+    text-decoration: none;
+    color: white;
+  }
+  .footer_part {
+    margin-left: 5%;
+    display: flex;
+  }
+  .footer_part--lien {
+    margin-left: 5%;
+    text-decoration: none;
+    color: white;
+    margin-left: 3%;
+  }
+  .footer_mentions {
+    margin-left: 5%;
+    text-decoration: none;
+    color: white;
+    font-family: "robotolight";
+  }
+  .footer_contact {
+    margin-left: 5%;
+    text-decoration: none;
+    color: white;
+    font-family: "robotolight";
   }
 }
 

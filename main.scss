@@ -98,12 +98,12 @@ body{
     }
 
     .description {
-        @include body-margin;
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 290px;
         text-align: center;
+        background-color: #F6F6F6;
         &_title {
             margin-top: 14%;
             margin-bottom: 0;
@@ -125,9 +125,12 @@ body{
     }
 
     .order {
+        height: 440px;
         @include body-margin;
         &_title {
             @include title;
+            margin-top: 9%;
+            margin-bottom: 7%;
         }
         &_1 {
             @include order;
@@ -137,6 +140,19 @@ body{
         }
         &_3 {
             @include order;
+        }
+        &_number {
+            width: 25px;
+            height: 25px;
+            background-color: $color-primary;
+            border-radius: 15px 15px 15px 15px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 50px;
+            margin-bottom: 0;
+            margin-top: 0;
         }
         
     }
@@ -156,7 +172,106 @@ body{
     .fa-store {
         margin-right: 28px;
         margin-left: 35px;
-        color: #7e7e7e;
+        color: $color-primary;
+    }
+
+    .rest {
+        height: 1225px;
+        background-color: #F6F6F6;
+        &_title {
+            @include title;
+            @include body-margin;
+            padding-top: 10%;
+            padding-bottom: 3%;
+        }
+    }
+
+    .cont {
+        height: 250px;
+        @include body-margin;
+        border-radius: 20px 20px 20px 20px;
+        background-color: white;
+        margin-bottom: 5%;
+        &_top {
+            height: 175px;
+            &--img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px 20px 0 0;
+            }
+        }
+        &_bottom {
+            display: flex;
+            justify-content: space-between;
+            height: 75px;
+            &_name {
+                display: flex;
+                flex-direction: column;
+                height: 75px;
+                width: 70%;
+                margin-left: 4%;
+                &--title {
+                    margin-bottom: 0;
+                    margin-top: 6%;
+                    font-family: map-get($map: $font-weight, $key: "bold");
+                    font-size: map-get($map: $font-size, $key: "text");
+                }
+                &--text {
+                    margin-top: 1%;
+                    font-family: map-get($map: $font-weight, $key: "light");
+                    font-size: map-get($map: $font-size, $key: "text");
+                }
+            }
+        }
+    }
+
+    .fa-heart {
+        margin-top: 50%;
+        margin-right: 25px;
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        background-color: #353535;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        height: 200px;
+        &_logo {
+            height: 20px;
+            width: 100px;
+            margin-left: 5%;
+            padding-top: 8%;
+            padding-bottom: 5%;
+            &--img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &_rest {
+            margin-left: 5%;
+            display: flex;
+            &--lien {
+                @include lien_footer;
+            }
+        }
+        &_part {
+            margin-left: 5%;
+            display: flex;
+            &--lien {
+                @include lien_footer;
+                margin-left: 3%;
+            }
+        }
+        &_mentions {
+            @include lien_footer;
+            font-family: map-get($map: $font-weight, $key: "light");
+        }
+        &_contact {
+            @include lien_footer;
+
+            font-family: map-get($map: $font-weight, $key: "light");
+        }
     }
 
 }
