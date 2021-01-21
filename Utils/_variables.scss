@@ -27,6 +27,12 @@ $font-weight: ("bold":"robotobold", "regular":"robotoregular", "light":"robotoli
     font-family: map-get($map: $font-weight, $key: "bold");
 }
 
+@mixin page_title {
+    margin-left: 5%;
+    font-size: 1.7rem;
+    font-family: $title-font;
+}
+
 @mixin order {
     background-color: #f6f6f6;
     display: flex;

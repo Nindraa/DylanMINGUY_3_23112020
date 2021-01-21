@@ -68,13 +68,13 @@ body{
 }
 
 @media (max-width: 375px){
-    .header_logo{
+    .accueil_logo{
         height: 60px;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        &-img{
+        &--img{
             height: 50%;
             width: 45%;
 
@@ -222,13 +222,12 @@ body{
                     font-size: map-get($map: $font-size, $key: "text");
                 }
             }
+            &--heart{
+                margin-right: 25px;
+                font-size: 1.2rem;
+                margin-top: 7%;
+            }
         }
-    }
-
-    .fa-heart {
-        margin-top: 50%;
-        margin-right: 25px;
-        font-size: 1.2rem;
     }
 
     .footer {
@@ -271,6 +270,121 @@ body{
             @include lien_footer;
 
             font-family: map-get($map: $font-weight, $key: "light");
+        }
+    }
+
+}
+
+/* Page 1 */
+
+@media (max-width: 375px) {
+    .page {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        &_arrow{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 8%;
+            &--lien{
+                color: #353535;
+            }
+        }
+        &_logo {
+            width: 72%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            &--img{
+                height: 50%;
+                width: 63%;
+            }
+        }
+    }
+
+    .pres {
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &_picture {
+            height: 215px;
+            width: 100%;
+            z-index: 2;
+            background-color: #F2F2F2;
+            &--img {
+            width: 100%;
+            height: auto;
+            }
+        }
+        &_title {
+            background-color: #F2F2F2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 85px;
+            z-index: 2;
+            border-radius: 25px 25px 0 0;
+            &--text{
+                @include page_title;
+            }
+            &--heart {
+                margin-right: 8%;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .menu {
+        background-color: #F2F2F2;
+        &_button {
+            @include button-pink;
+            width: 49%;
+            margin-left: 25%;
+            margin-top: 35px;
+            margin-bottom: 60px;
+        }
+    }
+
+    .selection {
+        @include body-margin;
+        &_title {
+            margin: 0;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            font-family: map-get($map: $font-weight, $key: light);
+        }
+        &_detail {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px 15px 15px 15px;
+            margin-bottom: 3%;
+            &--title {
+                font-family: map-get($map: $font-weight, $key: bold);
+                margin-left: 4%;
+                margin-bottom: 0;
+                margin-top: 3%;
+            }
+            &_desc {
+                display: flex;
+                justify-content: space-between;
+                &--text {
+                    margin-top: 1%;
+                    margin-left: 4%;
+                    margin-bottom: 3%;
+                    font-family: map-get($map: $font-weight, $key: light);
+                    font-size: 0.9rem;
+                }
+                &--price {
+                    margin-top: 1%;
+                    margin-right: 5%;
+                    margin-bottom: 3%;
+                    font-family: map-get($map: $font-weight, $key: bold);
+                }
+            }
         }
     }
 
