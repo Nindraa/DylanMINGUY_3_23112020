@@ -275,7 +275,7 @@ body{
 
 }
 
-/* Page 1 */
+/* Pages */
 
 @media (max-width: 375px) {
     .page {
@@ -312,7 +312,6 @@ body{
         &_picture {
             height: 215px;
             width: 100%;
-            z-index: 2;
             background-color: #F2F2F2;
             &--img {
             width: 100%;
@@ -325,7 +324,6 @@ body{
             align-items: center;
             justify-content: space-between;
             height: 85px;
-            z-index: 2;
             border-radius: 25px 25px 0 0;
             &--text{
                 @include page_title;
