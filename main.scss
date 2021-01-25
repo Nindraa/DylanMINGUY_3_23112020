@@ -67,9 +67,15 @@ body{
     font-family: map-get($map: $font-weight, $key: "regular");
 }
 
-@media (max-width: 375px){
+em {
+    border-bottom: solid 3px $color-tertiary;
+    padding-bottom: 1.5%;
+    font-style: normal;
+}
+
+@media (max-width: 425px){
     .accueil_logo{
-        height: 60px;
+        height: auto;
         width: 100%;
         display: flex;
         align-items: center;
@@ -77,6 +83,8 @@ body{
         &--img{
             height: 50%;
             width: 45%;
+            margin-top: 4%;
+            margin-bottom: 4%;
 
         }
     }
@@ -192,13 +200,10 @@ body{
         border-radius: 20px 20px 20px 20px;
         background-color: white;
         margin-bottom: 5%;
+        overflow: hidden;
         &_top {
             height: 175px;
-            &--img {
-                width: 100%;
-                height: 100%;
-                border-radius: 20px 20px 0 0;
-            }
+            overflow: hidden;
         }
         &_bottom {
             display: flex;
@@ -229,6 +234,67 @@ body{
             }
         }
     }
+
+    /* Position image acceuil */
+
+    #img_rest_1 {
+        width: 100%;
+        position: relative;
+        bottom: 30%;
+    }
+
+    #img_rest_2 {
+        width: 100%;
+        position: relative;
+        bottom: 85%;
+    }
+
+    #img_rest_3 {
+        width: 100%;
+        position: relative;
+        bottom: 30%;
+    }
+
+    #img_rest_4 {
+        width: 100%;
+        position: relative;
+        bottom: 30%;
+    }
+
+    /* Fin */
+
+    /* Position Nouveau */
+
+    #new_1 {
+        background-color: $color-tertiary;
+        position: absolute;
+        right: 10%;
+        z-index: 2;
+        color: #008766;
+        height: 30px;
+        width: 80px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 0.9rem;
+        font-family: map-get($map: $font-weight, $key: bold);
+        z-index: 2;
+    }
+
+    #new_2 {
+        background-color: $color-tertiary;
+        position: absolute;
+        right: 10%;
+        z-index: 2;
+        color: #008766;
+        height: 30px;
+        width: 80px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 0.9rem;
+        font-family: map-get($map: $font-weight, $key: bold);
+    }
+
+    /* Fin */
 
     .footer {
         background-color: #353535;
@@ -334,7 +400,9 @@ body{
         }
     }
 
-    #img_rest_1 {
+    /* Position image page */
+
+    #img_page_1 {
             width: 110%;
             height: auto;
             position: relative;
@@ -342,7 +410,7 @@ body{
             z-index: 1;
     }
 
-    #img_rest_2 {
+    #img_page_2 {
         width: 100%;
         height: auto;
         position: relative;
@@ -350,7 +418,7 @@ body{
         z-index: 1;
     }
 
-    #img_rest_3 {
+    #img_page_3 {
         width: 110%;
         height: auto;
         position: relative;
@@ -359,7 +427,7 @@ body{
         z-index: 1;
     }
 
-    #img_rest_4 {
+    #img_page_4 {
         width: 108%;
         height: auto;
         position: relative;
@@ -367,14 +435,20 @@ body{
         z-index: 1;
     }
 
+    /* Fin */
+
     .menu {
         background-color: #F2F2F2;
-        &_button {
-            @include button-pink;
-            width: 49%;
-            margin-left: 25%;
-            margin-top: 35px;
-            margin-bottom: 60px;
+        &_cont {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            &--button {
+                @include button-pink;
+                width: 40%;
+                margin-top: 35px;
+                margin-bottom: 60px;
+            }
         }
     }
 
@@ -418,4 +492,901 @@ body{
         }
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+/* Page Web */
+
+@media (min-width: 769px) {
+    .accueil_logo{
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--img{
+            height: 50%;
+            width: 45%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+
+        }
+    }
+
+    .header_geo{
+        background-color: #eaeaea;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        
+        &-input{
+            border: none;
+            height: 100%;
+            margin-left: 3%;
+            background-color: #eaeaea;
+            font-family: map-get($map: $font-weight, $key: "regular");
+            font-size: 1.3rem;
+        }
+    }
+    
+    .fa-map-marker-alt {
+        font-size: 1.5rem;
+    }
+    
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #F6F6F6;
+        padding-bottom: 5%;
+        &_title {
+            margin-top: 5%;
+            margin-bottom: 0;
+            margin-left: 15%;
+            margin-right: 15%;
+            @include title;
+        }
+        &_text {
+            font-family: map-get($map: $font-weight, $key: "light");
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: map-get($map: $font-size, $key: "text");
+        }
+        &_button--pink {
+            width: 218px;
+        @include button-pink;
+        }
+    }
+    
+    .order {
+        @include body-margin;
+        &_title {
+            @include title;
+            margin-top: 4%;
+            margin-bottom: 2%;
+            text-align: center;
+        }
+        &_1 {
+            @include order;
+        }
+        &_2 {
+            @include order;
+        }
+        &_3 {
+            @include order;
+        }
+        &_number {
+            width: 25px;
+            height: 25px;
+            background-color: $color-primary;
+            border-radius: 15px 15px 15px 15px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 50px;
+            margin-bottom: 0;
+            margin-top: 0;
+            margin-left: 31.5%;
+        }
+        
+    }
+    
+    .fa-mobile-alt {
+        margin-right: 28px;
+        margin-left: 35px;
+        color: #7e7e7e;
+    }
+    
+    .fa-list-ul {
+        margin-right: 28px;
+        margin-left: 35px;
+        color: #7e7e7e;
+    }
+    
+    .fa-store {
+        margin-right: 28px;
+        margin-left: 35px;
+        color: $color-primary;
+    }
+    
+    .rest {
+        height: auto;
+        background-color: #F6F6F6;
+        display: flex;
+        flex-wrap: wrap;
+        &_title {
+            @include title;
+            @include body-margin;
+            padding-top: 10%;
+            padding-bottom: 3%;
+            text-align: center;
+        }
+    }
+    
+    .cont {
+        height: 250px;
+        border-radius: 20px 20px 20px 20px;
+        background-color: white;
+        margin-bottom: 5%;
+        overflow: hidden;
+        width: 40%;
+        margin-left: 6.5%;
+        &_top {
+            height: 175px;
+            overflow: hidden;
+        }
+        &_bottom {
+            display: flex;
+            justify-content: space-between;
+            height: 75px;
+            &_name {
+                display: flex;
+                flex-direction: column;
+                height: 75px;
+                width: 70%;
+                margin-left: 4%;
+                &--title {
+                    margin-bottom: 0;
+                    margin-top: 6%;
+                    font-family: map-get($map: $font-weight, $key: "bold");
+                    font-size: map-get($map: $font-size, $key: "text");
+                }
+                &--text {
+                    margin-top: 1%;
+                    font-family: map-get($map: $font-weight, $key: "light");
+                    font-size: map-get($map: $font-size, $key: "text");
+                }
+            }
+            &--heart{
+                margin-right: 25px;
+                font-size: 1.2rem;
+                margin-top: 7%;
+            }
+        }
+    }
+    
+    /* Position image acceuil */
+    
+    #img_rest_1 {
+        width: 100%;
+        position: relative;
+        bottom: 30%;
+    }
+    
+    #img_rest_2 {
+        width: 100%;
+        position: relative;
+        bottom: 85%;
+    }
+    
+    #img_rest_3 {
+        width: 100%;
+        position: relative;
+        bottom: 30%;
+    }
+    
+    #img_rest_4 {
+        width: 100%;
+        position: relative;
+        bottom: 30%;
+    }
+    
+    /* Fin */
+    
+    /* Position Nouveau */
+    
+    #new_1 {
+        background-color: $color-tertiary;
+        position: absolute;
+        left: 35%;
+        z-index: 2;
+        color: #008766;
+        height: 30px;
+        width: 80px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 0.9rem;
+        font-family: map-get($map: $font-weight, $key: bold);
+        z-index: 2;
+    }
+    
+    #new_2 {
+        background-color: $color-tertiary;
+        position: absolute;
+        right: 10%;
+        z-index: 2;
+        color: #008766;
+        height: 30px;
+        width: 80px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 0.9rem;
+        font-family: map-get($map: $font-weight, $key: bold);
+    }
+    
+    /* Fin */
+    
+    .footer {
+        background-color: #353535;
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        height: auto;
+        padding-bottom: 4%;
+        &_logo {
+            height: 10%;
+            width: 90%;
+            margin-left: 40%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            &--img {
+                width: 30%;
+                height: 100%;
+            }
+        }
+        &_rest {
+            margin-left: 5%;
+            display: flex;
+            width: 20%;
+            &--lien {
+                @include lien_footer;
+                margin-left: 2.8%;
+            }
+        }
+        &_part {
+            margin-left: 5%;
+            display: flex;
+            width: 20%;
+            &--lien {
+                @include lien_footer;
+                margin-left: 2%;
+            }
+        }
+        &_mentions {
+            @include lien_footer;
+            width: 20%;
+            font-family: map-get($map: $font-weight, $key: "light");
+        }
+        &_contact {
+            @include lien_footer;
+            width: 20%;
+            font-family: map-get($map: $font-weight, $key: "light");
+        }
+    }
+    
+    /* Pages */
+    
+    .page {
+        width: 100%;
+        display: flex;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        &_arrow{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 3%;
+            &--lien{
+                color: #353535;
+            }
+        }
+        &_logo {
+            width: 72%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            &--img{
+                height: 50%;
+                width: 30%;
+                margin-left: 20%;
+            }
+        }
+    }
+    
+    .pres {
+        width: 100%;
+        background-color: #F2F2F2;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        &_title {
+            background-color: #F2F2F2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 85px;
+            width: 100%;
+            border-radius: 25px 25px 0 0;
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            &--text{
+                @include page_title;
+            }
+            &--heart {
+                margin-right: 8%;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+    /* Position image page */
+    
+    #img_page_1 {
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            margin-bottom: 1%;
+    }
+    
+    #img_page_2 {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        margin-bottom: 1%;
+    }
+    
+    #img_page_3 {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        margin-bottom: 1%;
+    }
+    
+    #img_page_4 {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        margin-bottom: 1%;
+    }
+    
+    /* Fin */
+    
+    .menu {
+        background-color: #F2F2F2;
+        display: flex;
+        flex-wrap: wrap;
+        &_cont {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            &--button {
+                @include button-pink;
+                width: 20%;
+                margin-top: 35px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+    
+    .selection {
+        @include body-margin;
+        width: 30%;
+        margin-left: 2.5%;
+        &_title {
+            margin: 0;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            font-family: map-get($map: $font-weight, $key: light);
+        }
+        &_detail {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px 15px 15px 15px;
+            margin-bottom: 5%;
+            &--title {
+                font-family: map-get($map: $font-weight, $key: bold);
+                margin-left: 4%;
+                margin-bottom: 0;
+                margin-top: 3%;
+                font-size: 1.1em;
+            }
+            &_desc {
+                display: flex;
+                justify-content: space-between;
+                &--text {
+                    margin-top: 1%;
+                    margin-left: 4%;
+                    margin-bottom: 3%;
+                    font-family: map-get($map: $font-weight, $key: light);
+                    font-size: 1em;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 75%;
+                }
+                &--price {
+                    margin-top: 1%;
+                    margin-right: 5%;
+                    margin-bottom: 3%;
+                    font-family: map-get($map: $font-weight, $key: bold);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/* Tablette */
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .accueil_logo{
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--img{
+            height: 50%;
+            width: 45%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+
+        }
+    }
+
+    .header_geo{
+        background-color: #eaeaea;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        
+        &-input{
+            border: none;
+            height: 100%;
+            margin-left: 3%;
+            background-color: #eaeaea;
+            font-family: map-get($map: $font-weight, $key: "regular");
+            font-size: 1.3rem;
+        }
+    }
+    
+    .fa-map-marker-alt {
+        font-size: 1.5rem;
+    }
+    
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #F6F6F6;
+        padding-bottom: 5%;
+        &_title {
+            margin-top: 5%;
+            margin-bottom: 0;
+            margin-left: 15%;
+            margin-right: 15%;
+            @include title;
+        }
+        &_text {
+            font-family: map-get($map: $font-weight, $key: "light");
+            margin-top: 2%;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: map-get($map: $font-size, $key: "text");
+        }
+        &_button--pink {
+            width: 218px;
+        @include button-pink;
+        }
+    }
+    
+    .order {
+        height: 440px;
+        @include body-margin;
+        &_title {
+            @include title;
+            margin-top: 4%;
+            margin-bottom: 2%;
+            text-align: center;
+        }
+        &_1 {
+            @include order;
+        }
+        &_2 {
+            @include order;
+        }
+        &_3 {
+            @include order;
+        }
+        &_number {
+            width: 25px;
+            height: 25px;
+            background-color: $color-primary;
+            border-radius: 15px 15px 15px 15px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 50px;
+            margin-bottom: 0;
+            margin-top: 0;
+            margin-left: 23%;
+        }
+        
+    }
+    
+    .fa-mobile-alt {
+        margin-right: 28px;
+        margin-left: 35px;
+        color: #7e7e7e;
+    }
+    
+    .fa-list-ul {
+        margin-right: 28px;
+        margin-left: 35px;
+        color: #7e7e7e;
+    }
+    
+    .fa-store {
+        margin-right: 28px;
+        margin-left: 35px;
+        color: $color-primary;
+    }
+    
+    .rest {
+        height: auto;
+        background-color: #F6F6F6;
+        display: flex;
+        flex-wrap: wrap;
+        &_title {
+            @include title;
+            @include body-margin;
+            padding-top: 10%;
+            padding-bottom: 3%;
+            text-align: center;
+        }
+    }
+    
+    .cont {
+        height: 250px;
+        border-radius: 20px 20px 20px 20px;
+        background-color: white;
+        margin-bottom: 5%;
+        overflow: hidden;
+        width: 40%;
+        margin-left: 6.5%;
+        &_top {
+            height: 175px;
+            overflow: hidden;
+        }
+        &_bottom {
+            display: flex;
+            justify-content: space-between;
+            height: 75px;
+            &_name {
+                display: flex;
+                flex-direction: column;
+                height: 75px;
+                width: 70%;
+                margin-left: 4%;
+                &--title {
+                    margin-bottom: 0;
+                    margin-top: 6%;
+                    font-family: map-get($map: $font-weight, $key: "bold");
+                    font-size: map-get($map: $font-size, $key: "text");
+                }
+                &--text {
+                    margin-top: 1%;
+                    font-family: map-get($map: $font-weight, $key: "light");
+                    font-size: map-get($map: $font-size, $key: "text");
+                }
+            }
+            &--heart{
+                margin-right: 25px;
+                font-size: 1.2rem;
+                margin-top: 7%;
+            }
+        }
+    }
+    
+    /* Position image acceuil */
+    
+    #img_rest_1 {
+        width: 100%;
+        position: relative;
+        bottom: 30%;
+    }
+    
+    #img_rest_2 {
+        width: 100%;
+        position: relative;
+        bottom: 85%;
+    }
+    
+    #img_rest_3 {
+        width: 100%;
+        position: relative;
+        bottom: 30%;
+    }
+    
+    #img_rest_4 {
+        width: 100%;
+        position: relative;
+        bottom: 30%;
+    }
+    
+    /* Fin */
+    
+    /* Position Nouveau */
+    
+    #new_1 {
+        background-color: $color-tertiary;
+        position: absolute;
+        left: 35%;
+        z-index: 2;
+        color: #008766;
+        height: 30px;
+        width: 80px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 0.9rem;
+        font-family: map-get($map: $font-weight, $key: bold);
+        z-index: 2;
+    }
+    
+    #new_2 {
+        background-color: $color-tertiary;
+        position: absolute;
+        right: 10%;
+        z-index: 2;
+        color: #008766;
+        height: 30px;
+        width: 80px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 0.9rem;
+        font-family: map-get($map: $font-weight, $key: bold);
+    }
+    
+    /* Fin */
+    
+    .footer {
+        background-color: #353535;
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        height: auto;
+        padding-bottom: 4%;
+        &_logo {
+            height: 10%;
+            width: 90%;
+            margin-left: 40%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            &--img {
+                width: 30%;
+                height: 100%;
+            }
+        }
+        &_rest {
+            margin-left: 5%;
+            display: flex;
+            width: 20%;
+            &--lien {
+                @include lien_footer;
+                margin-left: 2.8%;
+            }
+        }
+        &_part {
+            margin-left: 5%;
+            display: flex;
+            width: 20%;
+            &--lien {
+                @include lien_footer;
+                margin-left: 2%;
+            }
+        }
+        &_mentions {
+            @include lien_footer;
+            width: 20%;
+            font-family: map-get($map: $font-weight, $key: "light");
+        }
+        &_contact {
+            @include lien_footer;
+            width: 20%;
+            font-family: map-get($map: $font-weight, $key: "light");
+        }
+    }
+    
+    /* Pages */
+    
+    .page {
+        width: 100%;
+        display: flex;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        &_arrow{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 3%;
+            &--lien{
+                color: #353535;
+            }
+        }
+        &_logo {
+            width: 72%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            &--img{
+                height: 50%;
+                width: 30%;
+                margin-left: 20%;
+            }
+        }
+    }
+    
+    .pres {
+        width: 100%;
+        background-color: #F2F2F2;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        &_title {
+            background-color: #F2F2F2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 85px;
+            width: 100%;
+            border-radius: 25px 25px 0 0;
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            &--text{
+                @include page_title;
+            }
+            &--heart {
+                margin-right: 8%;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+    /* Position image page */
+    
+    #img_page_1 {
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            margin-bottom: 1%;
+    }
+    
+    #img_page_2 {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        margin-bottom: 1%;
+    }
+    
+    #img_page_3 {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        margin-bottom: 1%;
+    }
+    
+    #img_page_4 {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        margin-bottom: 1%;
+    }
+    
+    /* Fin */
+    
+    .menu {
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_cont {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            &--button {
+                @include button-pink;
+                width: 20%;
+                margin-top: 35px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+    
+    .selection {
+        @include body-margin;
+        width: 50%;
+        &_title {
+            margin: 0;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            font-family: map-get($map: $font-weight, $key: light);
+        }
+        &_detail {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px 15px 15px 15px;
+            margin-bottom: 5%;
+            &--title {
+                font-family: map-get($map: $font-weight, $key: bold);
+                margin-left: 4%;
+                margin-bottom: 0;
+                margin-top: 3%;
+                font-size: 1.1em;
+            }
+            &_desc {
+                display: flex;
+                justify-content: space-between;
+                &--text {
+                    margin-top: 1%;
+                    margin-left: 4%;
+                    margin-bottom: 3%;
+                    font-family: map-get($map: $font-weight, $key: light);
+                    font-size: 1em;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 75%;
+                }
+                &--price {
+                    margin-top: 1%;
+                    margin-right: 5%;
+                    margin-bottom: 3%;
+                    font-family: map-get($map: $font-weight, $key: bold);
+                }
+            }
+        }
+    }
 }

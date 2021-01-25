@@ -42,6 +42,28 @@ $font-weight: ("bold":"robotobold", "regular":"robotoregular", "light":"robotoli
     border-radius: 20px 20px 20px 20px;
     margin-left: 4%;
     font-family: map-get($map: $font-weight, $key: "bold");
+    @media (min-width: 769px) {
+        background-color: #f6f6f6;
+        display: flex;
+        height: 75px;
+        width: 33%;
+        align-items: center;
+        border-radius: 20px 20px 20px 20px;
+        margin-left: 33%;
+        font-family: map-get($map: $font-weight, $key: "bold");
+        font-size: 1.1em;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        background-color: #f6f6f6;
+        display: flex;
+        height: 75px;
+        width: 50%;
+        align-items: center;
+        border-radius: 20px 20px 20px 20px;
+        margin-left: 25%;
+        font-family: map-get($map: $font-weight, $key: "bold");
+        font-size: 1em;
+    }
 }
 
 @mixin lien_footer {
