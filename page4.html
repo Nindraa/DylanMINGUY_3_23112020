@@ -8,128 +8,128 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="index.html">
+    <header class="page">
+        <div class="page_arrow">
+            <a class="page_arrow--lien" href="index.html">
                 <span><i class="fas fa-arrow-left"></i></span>
             </a>
         </div>
-        <div> 
-            <img src="Images/images/logo/ohmyfood.png" alt="Logo">
+        <div class="page_logo"> 
+            <img class="page_logo--img" src="Images/images/logo/ohmyfood.png" alt="Logo">
         </div>
     </header>
-    <div>
-        <div>
-            <img src="Images/images/restaurants/restaurant4.jpg" alt="Restaurant N°4">
-        </div>
-        <div>
-            <h2>Le délice des sens</h2>
-            <span><i class="far fa-heart"></i></span>
+    <div class="pres">
+        <img id="img_page_4" src="Images/images/restaurants/restaurant4.jpg" alt="Restaurant N°4">
+        <div class="pres_title">
+            <h2 class="pres_title--text">Le délice des sens</h2>
+            <span class="pres_title--heart"><i class="far fa-heart"></i></span>
         </div>
     </div>
-    <!--Entrées-->
-    <div>
-        <h3>ENTRÉES</h3>
-        <!--Entrée N°1-->
-        <div>
-            <h4>Tartare de thon</h4>
-            <div>
-                <p>Assaisonné au yuzu</p>
-                <p>25€</p>
+    <div class="menu">
+        <!--Entrées-->
+        <div class="selection">
+            <h3 class="selection_title"><em>ENTR</em>ÉES</h3>
+            <!--Entrée N°1-->
+            <div class="selection_detail">
+                <h4 class="selection_detail--title">Tartare de thon</h4>
+                <div class="selection_detail_desc">
+                    <p class="selection_detail_desc--text">Assaisonné au yuzu</p>
+                    <p class="selection_detail_desc--price">25€</p>
+                </div>
+            </div>
+            <!--Entrée N°2-->
+            <div class="selection_detail">
+                <h4 class="selection_detail--title">Bouchée de homard croustillant</h4>
+                <div class="selection_detail_desc">
+                    <p class="selection_detail_desc--text">Et sa farandole de petits légumes</p>
+                    <p class="selection_detail_desc--price">35€</p>
+                </div>
+            </div>
+            <!--Entrée N°3-->
+            <div class="selection_detail">
+                <h4 class="selection_detail--title">Velouté de cèpes</h4>
+                <div class="selection_detail_desc">
+                    <p class="selection_detail_desc--text">Aux truffes</p>
+                    <p class="selection_detail_desc--price">20€</p>
+                </div>
             </div>
         </div>
-        <!--Entrée N°2-->
-        <div>
-            <h4>Bouchée de homard croustillant</h4>
-            <div>
-                <p>Et sa farandole de petits légumes</p>
-                <p>35€</p>
+        <!--Plats-->
+        <div class="selection">
+            <h3 class="selection_title"><em>PLAT</em>S</h3>
+            <!--Plat N°1-->
+            <div class="selection_detail">
+                <h4 class="selection_detail--title">Poulet rôti aux herbes de Provence</h4>
+                <div class="selection_detail_desc">
+                    <p class="selection_detail_desc--text">Et sa crème de truffe</p>
+                    <p class="selection_detail_desc--price">40€</p>
+                </div>
+            </div>
+            <!--Plat N°2-->
+            <div class="selection_detail">
+                <h4 class="selection_detail--title">Langouste rôtie</h4>
+                <div class="selection_detail_desc">
+                    <p class="selection_detail_desc--text">Et ses légumes de saison</p>
+                    <p class="selection_detail_desc--price">35€</p>
+                </div>
+            </div>
+            <!--Plat N°3-->
+            <div class="selection_detail">
+                <h4 class="selection_detail--title">Côte de boeuf Angus</h4>
+                <div class="selection_detail_desc">
+                    <p class="selection_detail_desc--text">Et sa purée de panais</p>
+                    <p class="selection_detail_desc--price">44€</p>
+                </div>
             </div>
         </div>
-        <!--Entrée N°3-->
-        <div>
-            <h4>Velouté de cèpes</h4>
-            <div>
-                <p>Aux truffes</p>
-                <p>20€</p>
+        <!--Dessert-->
+        <div class="selection">
+            <h3 class="selection_title"><em>DESS</em>ERTS</h3>
+            <!--Dessert N°1-->
+            <div class="selection_detail">
+                <h4 class="selection_detail--title">Farandole de desserts</h4>
+                <div class="selection_detail_desc">
+                    <p class="selection_detail_desc--text">Du chef</p>
+                    <p class="selection_detail_desc--price">18€</p>
+                </div>
+            </div>
+            <!--Dessert N°2-->
+            <div class="selection_detail">
+                <h4 class="selection_detail--title">Crème brulée</h4>
+                <div class="selection_detail_desc">
+                    <p class="selection_detail_desc--text">Revisitée</p>
+                    <p class="selection_detail_desc--price">22€</p>
+                </div>
+            </div>
+            <!--Dessert N°3-->
+            <div class="selection_detail">
+                <h4 class="selection_detail--title">Tiramisu</h4>
+                <div class="selection_detail_desc">
+                    <p class="selection_detail_desc--text">À la noisette</p>
+                    <p class="selection_detail_desc--price">23€</p>
+                </div>
             </div>
         </div>
-    </div>
-    <!--Plats-->
-    <div>
-        <h3>PLATS</h3>
-        <!--Plat N°1-->
-        <div>
-            <h4>Poulet rôti aux herbes de Provence</h4>
-            <div>
-                <p>Et sa crème de truffe</p>
-                <p>40€</p>
-            </div>
+        <!--Bouton-->
+        <div class="menu_cont">
+			<input class="menu_cont--button" type="button" name="Commander" value="Commander">
+		</div>
+	</div>
+    <footer class="footer">
+        <div class="footer_logo">
+            <img class="footer_logo--img" src="Images/images/logo/ohmyfoodblanc.png" alt="Logo">
         </div>
-        <!--Plat N°2-->
-        <div>
-            <h4>Langouste rôtie</h4>
-            <div>
-                <p>Et ses légumes de saison</p>
-                <p>35€</p>
-            </div>
-        </div>
-        <!--Plat N°3-->
-        <div>
-            <h4>Côte de boeuf Angus</h4>
-            <div>
-                <p>Et sa purée de panais</p>
-                <p>44€</p>
-            </div>
-        </div>
-    </div>
-    <!--Dessert-->
-    <div>
-        <h3>DESSERTS</h3>
-        <!--Dessert N°1-->
-        <div>
-            <h4>Farandole de desserts</h4>
-            <div>
-                <p>Du chef</p>
-                <p>18€</p>
-            </div>
-        </div>
-        <!--Dessert N°2-->
-        <div>
-            <h4>Crème brulée</h4>
-            <div>
-                <p>Revisitée</p>
-                <p>22€</p>
-            </div>
-        </div>
-        <!--Dessert N°3-->
-        <div>
-            <h4>Tiramisu</h4>
-            <div>
-                <p>À la noisette</p>
-                <p>23€</p>
-            </div>
-        </div>
-    </div>
-    <!--Bouton-->
-    <div>
-        <input type="button" name="Commander" value="Commander">
-    </div>
-    <footer>
-        <div>
-            <img src="Images/images/logo/ohmyfood.png" alt="Logo">
-        </div>
-        <div>
+        <div class="footer_rest">
             <span><i class="fas fa-utensils"></i></span>
-            <a href="#">Proposer un restaurant</a>
+            <a class="footer_rest--lien" href="#">Proposer un restaurant</a>
         </div>
-        <div>
+        <div class="footer_part">
             <span><i class="fas fa-hands-helping"></i></span>
-            <a href="#">Devenir partenaire</a>
+            <a class="footer_part--lien" href="#">Devenir partenaire</a>
         </div>
-        <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
+        <a class="footer_mentions" href="#">Mentions légales</a>
+        <a class="footer_contact" href="#">Contact</a>
     </footer>
-</body>
-</html>
+    </body>
+    </html>
     
