@@ -572,6 +572,7 @@ em {
     
     .order {
         @include body-margin;
+        margin-bottom: 5%;
         &_title {
             @include title;
             margin-top: 4%;
@@ -630,7 +631,7 @@ em {
         &_title {
             @include title;
             @include body-margin;
-            padding-top: 10%;
+            padding-top: 3%;
             padding-bottom: 3%;
             text-align: center;
         }
@@ -644,6 +645,10 @@ em {
         overflow: hidden;
         width: 40%;
         margin-left: 6.5%;
+        @media (min-width:1440px) {
+            width: 35%;
+            margin-left: 10%
+        }
         &_top {
             height: 175px;
             overflow: hidden;
@@ -721,6 +726,9 @@ em {
         font-size: 0.9rem;
         font-family: map-get($map: $font-weight, $key: bold);
         z-index: 2;
+        @media (min-width:1440px) {
+            left: 37%;
+        }
     }
     
     #new_2 {
@@ -735,6 +743,9 @@ em {
         line-height: 30px;
         font-size: 0.9rem;
         font-family: map-get($map: $font-weight, $key: bold);
+        @media (min-width:1440px) {
+            right: 12%;
+        }
     }
     
     /* Fin */
@@ -1208,7 +1219,7 @@ em {
         &_rest {
             margin-left: 5%;
             display: flex;
-            width: 20%;
+            width: 25%;
             &--lien {
                 @include lien_footer;
                 margin-left: 2.8%;
@@ -1225,7 +1236,7 @@ em {
         }
         &_mentions {
             @include lien_footer;
-            width: 20%;
+            width: 15%;
             font-family: map-get($map: $font-weight, $key: "light");
         }
         &_contact {
@@ -1243,7 +1254,7 @@ em {
         padding-top: 3%;
         padding-bottom: 3%;
         &_arrow{
-            width: 20%;
+            width: 15%;
             height: 100%;
             display: flex;
             align-items: center;
