@@ -674,6 +674,7 @@ em {
   .order {
     width: 90%;
     margin-left: 5%;
+    margin-bottom: 5%;
   }
   .order_title {
     font-size: 1.4rem;
@@ -857,7 +858,7 @@ em {
     font-family: "robotobold";
     width: 90%;
     margin-left: 5%;
-    padding-top: 10%;
+    padding-top: 3%;
     padding-bottom: 3%;
     text-align: center;
   }
@@ -872,10 +873,20 @@ em {
     width: 40%;
     margin-left: 6.5%;
   }
+}
+@media (min-width: 769px) and (min-width: 1440px) {
+  .cont {
+    width: 35%;
+    margin-left: 10%;
+  }
+}
+@media (min-width: 769px) {
   .cont_top {
     height: 175px;
     overflow: hidden;
   }
+}
+@media (min-width: 769px) {
   .cont_bottom {
     display: flex;
     justify-content: space-between;
@@ -949,6 +960,11 @@ em {
     z-index: 2;
   }
 }
+@media (min-width: 769px) and (min-width: 1440px) {
+  #new_1 {
+    left: 37%;
+  }
+}
 @media (min-width: 769px) {
   #new_2 {
     background-color: #99E2D0;
@@ -962,6 +978,11 @@ em {
     line-height: 30px;
     font-size: 0.9rem;
     font-family: "robotobold";
+  }
+}
+@media (min-width: 769px) and (min-width: 1440px) {
+  #new_2 {
+    right: 12%;
   }
 }
 @media (min-width: 769px) {
@@ -1575,7 +1596,7 @@ em {
   .footer_rest {
     margin-left: 5%;
     display: flex;
-    width: 20%;
+    width: 25%;
   }
   .footer_rest--lien {
     margin-left: 5%;
@@ -1598,7 +1619,7 @@ em {
     margin-left: 5%;
     text-decoration: none;
     color: white;
-    width: 20%;
+    width: 15%;
     font-family: "robotolight";
   }
   .footer_contact {
@@ -1617,7 +1638,7 @@ em {
     padding-bottom: 3%;
   }
   .page_arrow {
-    width: 20%;
+    width: 15%;
     height: 100%;
     display: flex;
     align-items: center;
