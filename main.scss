@@ -474,75 +474,57 @@ em {
         }
     }
 
-    .selection {
+    .selection1 {
         @include body-margin;
         &_title {
             margin: 0;
             padding-top: 5%;
             padding-bottom: 5%;
             font-family: map-get($map: $font-weight, $key: light);
+            animation: apparition 1s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
         }
     }
-    .choice {
-            background-color: white;
-            border-radius: 15px 15px 15px 15px;
-            margin-bottom: 3%;
-            display: flex;
-            &_detail {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                &:hover {
-                    & + .choice_anim {
-                        transform: scaleX(1);
-                        display: flex;
-                        transition-property: transform;
-                        transition-duration: 2000ms;
-                    }
-                }
-                &--title {
-                    font-family: map-get($map: $font-weight, $key: bold);
-                    margin-bottom: 0;
-                    margin-top: 3%;
-                    margin-left: 4%;
-                }
-                &_desc {
-                    display: flex;
-                    justify-content: space-between;
-                    &--text {
-                        margin-top: 1%;
-                        margin-left: 4%;
-                        margin-bottom: 3%;
-                        font-family: map-get($map: $font-weight, $key: light);
-                        font-size: 0.9rem;
-                    }
-                    &--price {
-                        margin-top: 1%;
-                        margin-right: 5%;
-                        margin-bottom: 3%;
-                        font-family: map-get($map: $font-weight, $key: bold);
-                    }
-                }
-            }
-            &_anim {
-                width: 25%;
-                height: auto;
-                background: $color-tertiary;
-                margin: 0;
-                border-radius: 0 15px 15px 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transform: scaleX(0);
-                transform-origin: right;
-                display: none;
-                &--check {
-                    color: white;
-                    font-size: 1.2rem;
-                }
-            }
+
+    .selection2 {
+        @include body-margin;
+        &_title {
+            margin: 0;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            font-family: map-get($map: $font-weight, $key: light);
+            animation: apparition 1s 2s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
         }
     }
+
+    .selection3 {
+        @include body-margin;
+        &_title {
+            margin: 0;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            font-family: map-get($map: $font-weight, $key: light);
+            animation: apparition 1s 4s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    .choice1 {
+        @include choice1;
+    }
+
+    .choice2 {
+        @include choice2;
+    }
+
+    .choice3 {
+        @include choice3;
+    }
+}
 
 
 
@@ -977,51 +959,58 @@ em {
         }
     }
     
-    .selection {
-        @include body-margin;
+    .selection1 {
         width: 30%;
-        margin-left: 2.5%;
+        margin-left: 3%;
         &_title {
             margin: 0;
             padding-top: 5%;
             padding-bottom: 5%;
             font-family: map-get($map: $font-weight, $key: light);
+            animation: apparition 1s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
         }
-        &_detail {
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            border-radius: 15px 15px 15px 15px;
-            margin-bottom: 5%;
-            &--title {
-                font-family: map-get($map: $font-weight, $key: bold);
-                margin-left: 4%;
-                margin-bottom: 0;
-                margin-top: 3%;
-                font-size: 1.1em;
-            }
-            &_desc {
-                display: flex;
-                justify-content: space-between;
-                &--text {
-                    margin-top: 1%;
-                    margin-left: 4%;
-                    margin-bottom: 3%;
-                    font-family: map-get($map: $font-weight, $key: light);
-                    font-size: 1em;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    width: 75%;
-                }
-                &--price {
-                    margin-top: 1%;
-                    margin-right: 5%;
-                    margin-bottom: 3%;
-                    font-family: map-get($map: $font-weight, $key: bold);
-                }
-            }
+    }
+
+    .selection2 {
+        width: 30%;
+        margin-left: 2%;
+        &_title {
+            margin: 0;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            font-family: map-get($map: $font-weight, $key: light);
+            animation: apparition 1s 2s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
         }
+    }
+
+    .selection3 {
+        width: 30%;
+        margin-left: 2%;
+        &_title {
+            margin: 0;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            font-family: map-get($map: $font-weight, $key: light);
+            animation: apparition 1s 4s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    .choice1 {
+        @include choice1;
+    }
+
+    .choice2 {
+        @include choice2;
+    }
+
+    .choice3 {
+        @include choice3;
     }
 }
 
@@ -1035,7 +1024,7 @@ em {
 /* Tablette */
 
 @media (min-width: 426px) and (max-width: 768px) {
-    .accueil_logo{
+    .accueil_logo {
         height: auto;
         width: 100%;
         display: flex;
@@ -1400,10 +1389,10 @@ em {
     /* Position image page */
     
     #img_page_1 {
-            width: 100%;
-            height: auto;
-            z-index: 1;
-            margin-bottom: 1%;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        margin-bottom: 1%;
     }
     
     #img_page_2 {
@@ -1447,7 +1436,7 @@ em {
         }
     }
     
-    .selection {
+    .selection1 {
         @include body-margin;
         width: 50%;
         &_title {
@@ -1455,41 +1444,49 @@ em {
             padding-top: 5%;
             padding-bottom: 5%;
             font-family: map-get($map: $font-weight, $key: light);
+            animation: apparition 1s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
         }
-        &_detail {
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            border-radius: 15px 15px 15px 15px;
-            margin-bottom: 5%;
-            &--title {
-                font-family: map-get($map: $font-weight, $key: bold);
-                margin-left: 4%;
-                margin-bottom: 0;
-                margin-top: 3%;
-                font-size: 1.1em;
-            }
-            &_desc {
-                display: flex;
-                justify-content: space-between;
-                &--text {
-                    margin-top: 1%;
-                    margin-left: 4%;
-                    margin-bottom: 3%;
-                    font-family: map-get($map: $font-weight, $key: light);
-                    font-size: 1em;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    width: 75%;
-                }
-                &--price {
-                    margin-top: 1%;
-                    margin-right: 5%;
-                    margin-bottom: 3%;
-                    font-family: map-get($map: $font-weight, $key: bold);
-                }
-            }
+    }
+
+    .selection2 {
+        @include body-margin;
+        width: 50%;
+        &_title {
+            margin: 0;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            font-family: map-get($map: $font-weight, $key: light);
+            animation: apparition 1s 2s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
         }
+    }
+
+    .selection3 {
+        @include body-margin;
+        width: 50%;
+        &_title {
+            margin: 0;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            font-family: map-get($map: $font-weight, $key: light);
+            animation: apparition 1s 4s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    .choice1 {
+        @include choice1;
+    }
+
+    .choice2 {
+        @include choice2;
+    }
+
+    .choice3 {
+        @include choice3;
     }
 }
