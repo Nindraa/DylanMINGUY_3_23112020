@@ -335,3 +335,30 @@ $font-weight: ("bold":"robotobold", "regular":"robotoregular", "light":"robotoli
     }
 }
 
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+        visibility: hidden;
+        opacity: 1;
+    }
+    to {
+        transform: rotate(360deg);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes backspinner {
+    from {
+        background: white;
+        opacity: 0.30;
+        visibility: hidden;
+    }
+
+    to {
+        background: white;
+        opacity: 0.30;
+        visibility: visible;
+    }
+}
+
