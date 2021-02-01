@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
+<div class="bloc">
+    <span class="bloc_spinner"><i class="fas fa-spinner"></i></span>
+</div>
 <head>
     <meta charset='utf-8'>
     <title>Oh my Food</title>
@@ -17,7 +20,7 @@
             <input class="header_geo-input" type="search" name="Recherche" id="search" value="Paris, Belleville">
         </div>
     </header>
-    <body>
+    <div>
         <div class="description">
             <h1 class="description_title">Réservez le menu qui vous convient</h1>
             <p class="description_text">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
@@ -27,17 +30,17 @@
             <h1 class="order_title">Fonctionnement</h1>
             <p class="order_number">1</p>
             <div class="order_1">
-                <span><i class="fas fa-mobile-alt"></i></span>
+                <span class="order_1--icon"><i class="fas fa-mobile-alt"></i></span>
                 <p class="order_1--text">Choississez un restaurant</p>
             </div>
             <p class="order_number">2</p>
             <div class="order_2">
-                <span><i class="fas fa-list-ul"></i></span>
+                <span class="order_2--icon"><i class="fas fa-list-ul"></i></span>
                 <p class="order_2--text">Composez votre menu</p>
             </div>
             <p class="order_number">3</p>
             <div class="order_3">
-                <span><i class="fas fa-store"></i></span>
+                <span class="order_3--icon"><i class="fas fa-store"></i></span>
                 <p class="order_3--text">Dégustez au restaurant</p>
             </div>
         </div>
@@ -45,60 +48,88 @@
             <h1 class="rest_title">Restaurants</h1>
             <!-- Restaurant 1 -->
             <div class="cont">
-                <p id="new_1">Nouveau</p>
-                <div class="cont_top">
-                    <img id="img_rest_1" src="Images/images/restaurants/restaurant1.jpg" alt="Restaurant N°1">
-                </div>
-                <div class="cont_bottom">
-                    <div class="cont_bottom_name">
-                        <h3 class="cont_bottom_name--title">La palette du goût</h3>
-                        <p class="cont_bottom_name--text">Ménilmontant</p>
+                <a class="lien_page1" href="page1.html">
+                    <p id="new_1">Nouveau</p>
+                    <div class="cont_top">
+                        <img id="img_rest_1" src="Images/images/restaurants/restaurant1.jpg" alt="Restaurant N°1">
                     </div>
-                    <span class="cont_bottom--heart"><i class="far fa-heart"></i></span>
+                </a>
+                <div class="cont_bottom">
+                    <a class="lien_page1" href="page1.html">
+                        <div class="cont_bottom_name">
+                            <h3 class="cont_bottom_name--title">La palette du goût</h3>
+                            <p class="cont_bottom_name--text">Ménilmontant</p>
+                        </div>
+                    </a>  
+                    <div>
+                        <span class="cont_bottom--heart"><i class="far fa-heart"></i></span>
+                        <span class="cont_bottom--like"><i class="fas fa-heart"></i></span>
+                    </div>
                 </div>
             </div>
             <!-- Restaurant 2 -->
             <div class="cont">
-                <p id="new_2">Nouveau</p>
-                <div class="cont_top">
-                    <img id="img_rest_2" src="Images/images/restaurants/restaurant2.jpg" alt="Restaurant N°2">
-                </div>
-                <div class="cont_bottom">
-                    <div class="cont_bottom_name">
-                        <h3 class="cont_bottom_name--title">La nôte enchantée</h3>
-                        <p class="cont_bottom_name--text">Charonne</p>
+                <a class="lien_page2" href="page2.html">
+                    <p id="new_2">Nouveau</p>
+                    <div class="cont_top">
+                        <img id="img_rest_2" src="Images/images/restaurants/restaurant2.jpg" alt="Restaurant N°2">
                     </div>
-                    <span class="cont_bottom--heart"><i class="far fa-heart"></i></span>
+                </a>
+                <div class="cont_bottom">
+                    <a class="lien_page2" href="page2.html">
+                        <div class="cont_bottom_name">
+                            <h3 class="cont_bottom_name--title">La nôte enchantée</h3>
+                            <p class="cont_bottom_name--text">Charonne</p>
+                        </div>
+                    </a>
+                    <div>
+                        <span class="cont_bottom--heart"><i class="far fa-heart"></i></span>
+                        <span class="cont_bottom--like"><i class="fas fa-heart"></i></span>
+                    </div>
                 </div>
             </div>
             <!-- Restaurant 3 -->
             <div class="cont">
-                <div class="cont_top">
-                    <img id="img_rest_3" src="Images/images/restaurants/restaurant3.jpg" alt="Restaurant N°3">
-                </div>
-                <div class="cont_bottom">
-                    <div class="cont_bottom_name">
-                        <h3 class="cont_bottom_name--title">À la française</h3>
-                        <p class="cont_bottom_name--text">Cité rouge</p>
+                <a class="lien_page3" href="page3.html">
+                    <div class="cont_top">
+                        <img id="img_rest_3" src="Images/images/restaurants/restaurant3.jpg" alt="Restaurant N°3">
                     </div>
-                    <span class="cont_bottom--heart"><i class="far fa-heart"></i></span>
+                </a>
+                <div class="cont_bottom">
+                    <a class="lien_page3" href="page3.html">
+                        <div class="cont_bottom_name">
+                            <h3 class="cont_bottom_name--title">À la française</h3>
+                            <p class="cont_bottom_name--text">Cité rouge</p>
+                        </div>
+                    </a>
+                    <div>
+                        <span class="cont_bottom--heart"><i class="far fa-heart"></i></span>
+                        <span class="cont_bottom--like"><i class="fas fa-heart"></i></span>
+                    </div>
                 </div>
             </div>
             <!-- Restaurant 4 -->
             <div class="cont">
-                <div class="cont_top">
-                    <img id="img_rest_4" src="Images/images/restaurants/restaurant4.jpg" alt="Restaurant N°4">
-                </div>
-                <div class="cont_bottom">
-                    <div class="cont_bottom_name">
-                        <h3 class="cont_bottom_name--title">Le délice des sens</h3>
-                        <p class="cont_bottom_name--text">Folie-Méricourt</p>
+                <a class="lien_page4" href="page4.html">
+                    <div class="cont_top">
+                        <img id="img_rest_4" src="Images/images/restaurants/restaurant4.jpg" alt="Restaurant N°4">
                     </div>
-                    <span class="cont_bottom--heart"><i class="far fa-heart"></i></span>
+                </a>
+                <div class="cont_bottom">
+                    <a class="lien_page4" href="page4.html">
+                        <div class="cont_bottom_name">
+                            <h3 class="cont_bottom_name--title">Le délice des sens</h3>
+                            <p class="cont_bottom_name--text">Folie-Méricourt</p>
+                        </div>
+                    </a>
+                    <div>
+                        <span class="cont_bottom--heart"><i class="far fa-heart"></i></span>
+                        <span class="cont_bottom--like"><i class="fas fa-heart"></i></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
     <footer class="footer">
         <div class="footer_logo">
             <img class="footer_logo--img" src="Images/images/logo/ohmyfoodblanc.png" alt="Logo">
