@@ -9,6 +9,18 @@
     }
 }
 
+@keyframes heart {
+    from {
+        visibility: hidden;
+        transform: scale(0);
+        color: $color-tertiary;
+    }
+    to {
+        visibility: visible;
+        color: $color-tertiary;
+        transform: scale(1);
+    }
+}
 @keyframes check {
     from {
         transform: scaleX(0);

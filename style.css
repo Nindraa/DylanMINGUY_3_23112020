@@ -42,6 +42,18 @@
     visibility: visible;
   }
 }
+@keyframes heart {
+  from {
+    visibility: hidden;
+    transform: scale(0);
+    color: #99E2D0;
+  }
+  to {
+    visibility: visible;
+    color: #99E2D0;
+    transform: scale(1);
+  }
+}
 @keyframes check {
   from {
     transform: scaleX(0);
@@ -471,18 +483,15 @@ em {
   .cont_bottom--heart {
     font-size: 1.2rem;
   }
-  .cont_bottom--heart:active {
-    visibility: hidden;
-  }
-  .cont_bottom--heart:active + .cont_bottom--like {
-    visibility: visible;
-    color: #99E2D0;
+  .cont_bottom--heart:hover + .cont_bottom--like {
+    animation: heart 2s;
+    animation-fill-mode: forwards;
   }
   .cont_bottom--like {
     font-size: 1.2rem;
     position: relative;
-    right: 55%;
     visibility: hidden;
+    right: 55%;
   }
 }
 @media (max-width: 425px) {
@@ -1340,18 +1349,15 @@ em {
   .cont_bottom--heart {
     font-size: 1.2rem;
   }
-  .cont_bottom--heart:active {
-    visibility: hidden;
-  }
-  .cont_bottom--heart:active + .cont_bottom--like {
-    visibility: visible;
-    color: #99E2D0;
+  .cont_bottom--heart:hover + .cont_bottom--like {
+    animation: heart 2s;
+    animation-fill-mode: forwards;
   }
   .cont_bottom--like {
     font-size: 1.2rem;
     position: relative;
-    right: 55%;
     visibility: hidden;
+    right: 55%;
   }
 }
 @media (min-width: 769px) {
@@ -2221,18 +2227,15 @@ em {
   .cont_bottom--heart {
     font-size: 1.2rem;
   }
-  .cont_bottom--heart:active {
-    visibility: hidden;
-  }
-  .cont_bottom--heart:active + .cont_bottom--like {
-    visibility: visible;
-    color: #99E2D0;
+  .cont_bottom--heart:hover + .cont_bottom--like {
+    animation: heart 2s;
+    animation-fill-mode: forwards;
   }
   .cont_bottom--like {
     font-size: 1.2rem;
     position: relative;
-    right: 55%;
     visibility: hidden;
+    right: 55%;
   }
 }
 @media (min-width: 426px) and (max-width: 768px) {
