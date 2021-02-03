@@ -1,0 +1,284 @@
+@mixin body-margin {
+    width: 90%;
+    margin-left: 5%;
+}
+
+@mixin button-pink {
+    height: 50px;
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        border: none;
+        border-radius: 25px 25px 25px 25px;
+        color: white;
+        font-family: map-get($map: $font-weight, $key: "regular");
+        font-size: map-get($map: $font-size, $key: "text");
+        cursor: pointer;
+        &:hover {
+            background: linear-gradient(to bottom right, $color-secondary, rgba(187, 86, 220, 0.60));
+        }
+}
+
+@mixin title {
+    font-size: map-get($map: $font-size, $key: "title");
+    font-family: map-get($map: $font-weight, $key: "bold");
+}
+
+@mixin page_title {
+    margin-left: 5%;
+    font-size: 1.7rem;
+    font-family: $title-font;
+}
+
+@mixin order {
+    background: #f6f6f6;
+    display: flex;
+    height: 75px;
+    width: 96%;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 4%;
+    font-family: map-get($map: $font-weight, $key: "bold");
+    &--icon {
+        margin-right: 28px;
+        margin-left: 35px;
+        color: #7e7e7e;
+    }
+    @media (min-width: 769px) {
+        background: #f6f6f6;
+        display: flex;
+        height: 75px;
+        width: 33%;
+        align-items: center;
+        border-radius: 20px 20px 20px 20px;
+        margin-left: 33%;
+        font-family: map-get($map: $font-weight, $key: "bold");
+        font-size: 1.1em;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        background: #f6f6f6;
+        display: flex;
+        height: 75px;
+        width: 50%;
+        align-items: center;
+        border-radius: 20px 20px 20px 20px;
+        margin-left: 25%;
+        font-family: map-get($map: $font-weight, $key: "bold");
+        font-size: 1em;
+    }
+    &:hover {
+        animation: order 400ms;
+        animation-fill-mode: forwards;
+        & > .order_1--icon {
+            animation: icon 600ms;
+            animation-fill-mode: forwards;
+        }
+        & > .order_2--icon {
+            animation: icon 600ms;
+            animation-fill-mode: forwards;
+        }
+        & > .order_3--icon {
+            animation: icon 600ms;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@mixin lien_footer {
+    margin-left: 5%;
+    text-decoration: none;
+    color: white;
+}
+
+@mixin choice1 {
+    background-color: white;
+        display: flex;
+        border-radius: 15px 15px 15px 15px;
+        margin-bottom: 5%;
+        animation: apparition 1s 1s;
+        transform-origin: left;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+        &_detail{  
+            width: 100%;
+            &:hover {
+                & + .choice1_anim {
+                    display: flex;
+                    animation: check 400ms;
+                    transform-origin: right;
+                }
+            }
+            &--title {
+                font-family: map-get($map: $font-weight, $key: bold);
+                margin-left: 4%;
+                margin-bottom: 0;
+                margin-top: 3%;
+                font-size: 1.1em;
+            }
+            &_desc {
+                display: flex;
+                justify-content: space-between;
+                &--text {
+                    margin-top: 1%;
+                    margin-left: 4%;
+                    margin-bottom: 3%;
+                    font-family: map-get($map: $font-weight, $key: light);
+                    font-size: 1em;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 75%;
+                }
+                &--price {
+                    margin-top: 1%;
+                    margin-right: 5%;
+                    margin-bottom: 3%;
+                    font-family: map-get($map: $font-weight, $key: bold);
+                }
+            }
+        }
+        &_anim {
+            width: 25%;
+            height: auto;
+            background: $color-tertiary;
+            margin: 0;
+            border-radius: 0 15px 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+            &--check {
+                color: white;
+                font-size: 1.2rem;
+            }
+        }
+    
+}
+
+@mixin choice2 {
+    background-color: white;
+        display: flex;
+        border-radius: 15px 15px 15px 15px;
+        margin-bottom: 5%;
+        animation: apparition 1s 3s;
+        transform-origin: left;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+        &_detail{  
+            width: 100%;
+            &:hover {
+                & + .choice2_anim {
+                    display: flex;
+                    animation: check 400ms;
+                    transform-origin: right;
+                }
+            }
+            &--title {
+                font-family: map-get($map: $font-weight, $key: bold);
+                margin-left: 4%;
+                margin-bottom: 0;
+                margin-top: 3%;
+                font-size: 1.1em;
+            }
+            &_desc {
+                display: flex;
+                justify-content: space-between;
+                &--text {
+                    margin-top: 1%;
+                    margin-left: 4%;
+                    margin-bottom: 3%;
+                    font-family: map-get($map: $font-weight, $key: light);
+                    font-size: 1em;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 75%;
+                }
+                &--price {
+                    margin-top: 1%;
+                    margin-right: 5%;
+                    margin-bottom: 3%;
+                    font-family: map-get($map: $font-weight, $key: bold);
+                }
+            }
+        }
+        &_anim {
+            width: 25%;
+            height: auto;
+            background: $color-tertiary;
+            margin: 0;
+            border-radius: 0 15px 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+            &--check {
+                color: white;
+                font-size: 1.2rem;
+            }
+        }
+    
+}
+
+@mixin choice3 {
+    background-color: white;
+        display: flex;
+        border-radius: 15px 15px 15px 15px;
+        margin-bottom: 5%;
+        animation: apparition 1s 5s;
+        transform-origin: left;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+        &_detail{  
+            width: 100%;
+            &:hover {
+                & + .choice3_anim {
+                    display: flex;
+                    animation: check 400ms;
+                    transform-origin: right;
+                }
+            }
+            &--title {
+                font-family: map-get($map: $font-weight, $key: bold);
+                margin-left: 4%;
+                margin-bottom: 0;
+                margin-top: 3%;
+                font-size: 1.1em;
+            }
+            &_desc {
+                display: flex;
+                justify-content: space-between;
+                &--text {
+                    margin-top: 1%;
+                    margin-left: 4%;
+                    margin-bottom: 3%;
+                    font-family: map-get($map: $font-weight, $key: light);
+                    font-size: 1em;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 75%;
+                }
+                &--price {
+                    margin-top: 1%;
+                    margin-right: 5%;
+                    margin-bottom: 3%;
+                    font-family: map-get($map: $font-weight, $key: bold);
+                }
+            }
+        }
+        &_anim {
+            width: 25%;
+            height: auto;
+            background: $color-tertiary;
+            margin: 0;
+            border-radius: 0 15px 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+            &--check {
+                color: white;
+                font-size: 1.2rem;
+            }
+        }
+    
+}
