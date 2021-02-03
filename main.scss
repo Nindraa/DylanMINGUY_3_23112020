@@ -183,19 +183,18 @@ em {
             }
             &--heart{
                 font-size: 1.2rem;
-                &:active {
-                    visibility: hidden;
+                &:hover {
                     & + .cont_bottom--like {
-                        visibility: visible;
-                        color: $color-tertiary;
+                        animation: heart 2s;
+                        animation-fill-mode: forwards;
                     }
                 }
             }
             &--like {
                 font-size: 1.2rem;
                 position: relative;
-                right: 55%;
                 visibility: hidden;
+                right: 55%;
             }
         }
     }
