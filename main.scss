@@ -183,18 +183,18 @@ em {
             }
             &--heart{
                 font-size: 1.2rem;
-                &:hover {
-                    & + .cont_bottom--like {
-                        animation: heart 2s;
-                        animation-fill-mode: forwards;
-                    }
-                }
             }
             &--like {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 position: relative;
-                visibility: hidden;
                 right: 55%;
+                bottom: 1px;
+                color: $color-tertiary;
+                opacity: 0;
+                &:hover {
+                    animation: heart 2s;
+                    animation-fill-mode: forwards;
+                }
             }
         }
     }
@@ -661,18 +661,18 @@ em {
             }
             &--heart{
                 font-size: 1.2rem;
-                &:hover {
-                    & + .cont_bottom--like {
-                        animation: heart 2s;
-                        animation-fill-mode: forwards;
-                    }
-                }
             }
             &--like {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 position: relative;
-                visibility: hidden;
                 right: 55%;
+                bottom: 1px;
+                color: $color-tertiary;
+                opacity: 0;
+                &:hover {
+                    animation: heart 2s;
+                    animation-fill-mode: forwards;
+                }
             }
         }
     }
@@ -1142,18 +1142,18 @@ em {
             }
             &--heart{
                 font-size: 1.2rem;
-                &:hover {
-                    & + .cont_bottom--like {
-                        animation: heart 2s;
-                        animation-fill-mode: forwards;
-                    }
-                }
             }
             &--like {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 position: relative;
-                visibility: hidden;
                 right: 55%;
+                bottom: 1px;
+                color: $color-tertiary;
+                opacity: 0;
+                &:hover {
+                    animation: heart 2s;
+                    animation-fill-mode: forwards;
+                }
             }
         }
     }

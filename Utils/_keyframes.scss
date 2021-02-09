@@ -11,14 +11,10 @@
 
 @keyframes heart {
     from {
-        visibility: hidden;
-        transform: scale(0);
-        color: $color-tertiary;
+        opacity: 0;
     }
     to {
-        visibility: visible;
-        color: $color-tertiary;
-        transform: scale(1);
+        opacity: 1;
     }
 }
 @keyframes check {
