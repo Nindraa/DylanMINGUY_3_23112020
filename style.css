@@ -689,6 +689,17 @@ em {
     margin-right: 8%;
     font-size: 1.5rem;
   }
+  .pres_title--like {
+    position: absolute;
+    right: 8.4%;
+    font-size: 1.3rem;
+    color: #99E2D0;
+    opacity: 0;
+  }
+  .pres_title--like:hover {
+    animation: heart 2s;
+    animation-fill-mode: forwards;
+  }
 
   /* Position image page */
   #img_page_1 {
@@ -830,7 +841,7 @@ em {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 75%;
+    width: 70%;
   }
   .choice1_detail_desc--price {
     margin-top: 1%;
@@ -892,7 +903,7 @@ em {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 75%;
+    width: 70%;
   }
   .choice2_detail_desc--price {
     margin-top: 1%;
@@ -954,7 +965,7 @@ em {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 75%;
+    width: 70%;
   }
   .choice3_detail_desc--price {
     margin-top: 1%;
@@ -1574,6 +1585,17 @@ em {
     margin-right: 8%;
     font-size: 1.5rem;
   }
+  .pres_title--like {
+    position: absolute;
+    right: 8.17%;
+    font-size: 1.3rem;
+    color: #99E2D0;
+    opacity: 0;
+  }
+  .pres_title--like:hover {
+    animation: heart 2s;
+    animation-fill-mode: forwards;
+  }
 }
 @media (min-width: 769px) {
   #img_page_1 {
@@ -1719,7 +1741,7 @@ em {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 75%;
+    width: 70%;
   }
   .choice1_detail_desc--price {
     margin-top: 1%;
@@ -1782,7 +1804,7 @@ em {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 75%;
+    width: 70%;
   }
   .choice2_detail_desc--price {
     margin-top: 1%;
@@ -1845,7 +1867,7 @@ em {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 75%;
+    width: 70%;
   }
   .choice3_detail_desc--price {
     margin-top: 1%;
@@ -2444,6 +2466,17 @@ em {
     margin-right: 8%;
     font-size: 1.5rem;
   }
+  .pres_title--like {
+    position: absolute;
+    right: 8.22%;
+    font-size: 1.3rem;
+    color: #99E2D0;
+    opacity: 0;
+  }
+  .pres_title--like:hover {
+    animation: heart 2s;
+    animation-fill-mode: forwards;
+  }
 }
 @media (min-width: 426px) and (max-width: 768px) {
   #img_page_1 {
@@ -2593,7 +2626,7 @@ em {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 75%;
+    width: 70%;
   }
   .choice1_detail_desc--price {
     margin-top: 1%;
@@ -2656,7 +2689,7 @@ em {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 75%;
+    width: 70%;
   }
   .choice2_detail_desc--price {
     margin-top: 1%;
@@ -2719,7 +2752,7 @@ em {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 75%;
+    width: 70%;
   }
   .choice3_detail_desc--price {
     margin-top: 1%;
