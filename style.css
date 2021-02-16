@@ -58,6 +58,14 @@
     transform: scaleX(1);
   }
 }
+@keyframes check2 {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 80%;
+  }
+}
 @keyframes icon {
   from {
     color: #7e7e7e;
@@ -816,6 +824,11 @@ em {
   .choice1_detail {
     width: 100%;
   }
+  .choice1_detail:hover {
+    animation: check2 400ms;
+    transform-origin: left;
+    animation-fill-mode: forwards;
+  }
   .choice1_detail:hover + .choice1_anim {
     display: flex;
     animation: check 400ms;
@@ -823,10 +836,13 @@ em {
   }
   .choice1_detail--title {
     font-family: "robotobold";
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 0;
     margin-top: 3%;
     font-size: 1.1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .choice1_detail_desc {
     display: flex;
@@ -834,14 +850,13 @@ em {
   }
   .choice1_detail_desc--text {
     margin-top: 1%;
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 3%;
     font-family: "robotolight";
     font-size: 1em;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 70%;
   }
   .choice1_detail_desc--price {
     margin-top: 1%;
@@ -850,12 +865,11 @@ em {
     font-family: "robotobold";
   }
   .choice1_anim {
-    width: 25%;
+    width: 20%;
     height: auto;
     background: #99E2D0;
     margin: 0;
     border-radius: 0 15px 15px 0;
-    display: flex;
     align-items: center;
     justify-content: center;
     display: none;
@@ -878,6 +892,11 @@ em {
   .choice2_detail {
     width: 100%;
   }
+  .choice2_detail:hover {
+    animation: check2 400ms;
+    transform-origin: left;
+    animation-fill-mode: forwards;
+  }
   .choice2_detail:hover + .choice2_anim {
     display: flex;
     animation: check 400ms;
@@ -885,10 +904,13 @@ em {
   }
   .choice2_detail--title {
     font-family: "robotobold";
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 0;
     margin-top: 3%;
     font-size: 1.1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .choice2_detail_desc {
     display: flex;
@@ -896,7 +918,7 @@ em {
   }
   .choice2_detail_desc--text {
     margin-top: 1%;
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 3%;
     font-family: "robotolight";
     font-size: 1em;
@@ -912,7 +934,7 @@ em {
     font-family: "robotobold";
   }
   .choice2_anim {
-    width: 25%;
+    width: 20%;
     height: auto;
     background: #99E2D0;
     margin: 0;
@@ -940,6 +962,11 @@ em {
   .choice3_detail {
     width: 100%;
   }
+  .choice3_detail:hover {
+    animation: check2 400ms;
+    transform-origin: left;
+    animation-fill-mode: forwards;
+  }
   .choice3_detail:hover + .choice3_anim {
     display: flex;
     animation: check 400ms;
@@ -947,10 +974,13 @@ em {
   }
   .choice3_detail--title {
     font-family: "robotobold";
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 0;
     margin-top: 3%;
     font-size: 1.1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .choice3_detail_desc {
     display: flex;
@@ -958,7 +988,7 @@ em {
   }
   .choice3_detail_desc--text {
     margin-top: 1%;
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 3%;
     font-family: "robotolight";
     font-size: 1em;
@@ -974,7 +1004,7 @@ em {
     font-family: "robotobold";
   }
   .choice3_anim {
-    width: 25%;
+    width: 20%;
     height: auto;
     background: #99E2D0;
     margin: 0;
@@ -1716,6 +1746,11 @@ em {
   .choice1_detail {
     width: 100%;
   }
+  .choice1_detail:hover {
+    animation: check2 400ms;
+    transform-origin: left;
+    animation-fill-mode: forwards;
+  }
   .choice1_detail:hover + .choice1_anim {
     display: flex;
     animation: check 400ms;
@@ -1723,10 +1758,13 @@ em {
   }
   .choice1_detail--title {
     font-family: "robotobold";
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 0;
     margin-top: 3%;
     font-size: 1.1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .choice1_detail_desc {
     display: flex;
@@ -1734,14 +1772,13 @@ em {
   }
   .choice1_detail_desc--text {
     margin-top: 1%;
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 3%;
     font-family: "robotolight";
     font-size: 1em;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 70%;
   }
   .choice1_detail_desc--price {
     margin-top: 1%;
@@ -1750,12 +1787,11 @@ em {
     font-family: "robotobold";
   }
   .choice1_anim {
-    width: 25%;
+    width: 20%;
     height: auto;
     background: #99E2D0;
     margin: 0;
     border-radius: 0 15px 15px 0;
-    display: flex;
     align-items: center;
     justify-content: center;
     display: none;
@@ -1779,6 +1815,11 @@ em {
   .choice2_detail {
     width: 100%;
   }
+  .choice2_detail:hover {
+    animation: check2 400ms;
+    transform-origin: left;
+    animation-fill-mode: forwards;
+  }
   .choice2_detail:hover + .choice2_anim {
     display: flex;
     animation: check 400ms;
@@ -1786,10 +1827,13 @@ em {
   }
   .choice2_detail--title {
     font-family: "robotobold";
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 0;
     margin-top: 3%;
     font-size: 1.1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .choice2_detail_desc {
     display: flex;
@@ -1797,7 +1841,7 @@ em {
   }
   .choice2_detail_desc--text {
     margin-top: 1%;
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 3%;
     font-family: "robotolight";
     font-size: 1em;
@@ -1813,7 +1857,7 @@ em {
     font-family: "robotobold";
   }
   .choice2_anim {
-    width: 25%;
+    width: 20%;
     height: auto;
     background: #99E2D0;
     margin: 0;
@@ -1842,6 +1886,11 @@ em {
   .choice3_detail {
     width: 100%;
   }
+  .choice3_detail:hover {
+    animation: check2 400ms;
+    transform-origin: left;
+    animation-fill-mode: forwards;
+  }
   .choice3_detail:hover + .choice3_anim {
     display: flex;
     animation: check 400ms;
@@ -1849,10 +1898,13 @@ em {
   }
   .choice3_detail--title {
     font-family: "robotobold";
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 0;
     margin-top: 3%;
     font-size: 1.1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .choice3_detail_desc {
     display: flex;
@@ -1860,7 +1912,7 @@ em {
   }
   .choice3_detail_desc--text {
     margin-top: 1%;
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 3%;
     font-family: "robotolight";
     font-size: 1em;
@@ -1876,7 +1928,7 @@ em {
     font-family: "robotobold";
   }
   .choice3_anim {
-    width: 25%;
+    width: 20%;
     height: auto;
     background: #99E2D0;
     margin: 0;
@@ -2601,6 +2653,11 @@ em {
   .choice1_detail {
     width: 100%;
   }
+  .choice1_detail:hover {
+    animation: check2 400ms;
+    transform-origin: left;
+    animation-fill-mode: forwards;
+  }
   .choice1_detail:hover + .choice1_anim {
     display: flex;
     animation: check 400ms;
@@ -2608,10 +2665,13 @@ em {
   }
   .choice1_detail--title {
     font-family: "robotobold";
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 0;
     margin-top: 3%;
     font-size: 1.1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .choice1_detail_desc {
     display: flex;
@@ -2619,14 +2679,13 @@ em {
   }
   .choice1_detail_desc--text {
     margin-top: 1%;
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 3%;
     font-family: "robotolight";
     font-size: 1em;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 70%;
   }
   .choice1_detail_desc--price {
     margin-top: 1%;
@@ -2635,12 +2694,11 @@ em {
     font-family: "robotobold";
   }
   .choice1_anim {
-    width: 25%;
+    width: 20%;
     height: auto;
     background: #99E2D0;
     margin: 0;
     border-radius: 0 15px 15px 0;
-    display: flex;
     align-items: center;
     justify-content: center;
     display: none;
@@ -2664,6 +2722,11 @@ em {
   .choice2_detail {
     width: 100%;
   }
+  .choice2_detail:hover {
+    animation: check2 400ms;
+    transform-origin: left;
+    animation-fill-mode: forwards;
+  }
   .choice2_detail:hover + .choice2_anim {
     display: flex;
     animation: check 400ms;
@@ -2671,10 +2734,13 @@ em {
   }
   .choice2_detail--title {
     font-family: "robotobold";
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 0;
     margin-top: 3%;
     font-size: 1.1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .choice2_detail_desc {
     display: flex;
@@ -2682,7 +2748,7 @@ em {
   }
   .choice2_detail_desc--text {
     margin-top: 1%;
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 3%;
     font-family: "robotolight";
     font-size: 1em;
@@ -2698,7 +2764,7 @@ em {
     font-family: "robotobold";
   }
   .choice2_anim {
-    width: 25%;
+    width: 20%;
     height: auto;
     background: #99E2D0;
     margin: 0;
@@ -2727,6 +2793,11 @@ em {
   .choice3_detail {
     width: 100%;
   }
+  .choice3_detail:hover {
+    animation: check2 400ms;
+    transform-origin: left;
+    animation-fill-mode: forwards;
+  }
   .choice3_detail:hover + .choice3_anim {
     display: flex;
     animation: check 400ms;
@@ -2734,10 +2805,13 @@ em {
   }
   .choice3_detail--title {
     font-family: "robotobold";
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 0;
     margin-top: 3%;
     font-size: 1.1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   .choice3_detail_desc {
     display: flex;
@@ -2745,7 +2819,7 @@ em {
   }
   .choice3_detail_desc--text {
     margin-top: 1%;
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 3%;
     font-family: "robotolight";
     font-size: 1em;
@@ -2761,7 +2835,7 @@ em {
     font-family: "robotobold";
   }
   .choice3_anim {
-    width: 25%;
+    width: 20%;
     height: auto;
     background: #99E2D0;
     margin: 0;
